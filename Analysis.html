@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="innholdsside med Wave og Lighthouse resultater av nettstedet">
+
+    <!--Opengraph meta-->  
+    <meta property="og:title" content="Analyse">
+    <meta property="og:url" content="https://itstud-hiof.no/~mareamns/deleksamen_2/Analysis.html">
+    <meta property="og:description" content="Informasjon om analysering av nettsiden">
+    <meta property="og:image" content="bilder/Analysis.jpg">
+    <!--Twittercards-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Analyse"> 
+    <meta name="twitter:description" content="Informasjon om analysering av nettsiden">
+    <meta name="twitter:image" content="bilder/Analysis.jpg">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet"> 
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Analyse</title>
+    <link rel = "icon" href ="bilder/globe-solid.svg" type = "image/x-icon">
+</head>
+<body>
+    <div id="main-container">
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo" src="bilder/logo.jpg" alt="placeholder bilde for logo"></a>
+            <a href="#" aria-label="Hamburgermeny" id="meny-icon" onclick="hamMenu()"><i class="fa-regular fa-bars"></i></a>
+            <ul id="nav-menu" style="display:block">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="UUvsSEO.html">UU vs SEO</a></li>
+                <li><a href="CMS.html">CMS</a></li>
+                <li><a href="Analysis.html">Analyse</a></li>
+                <li><a href="ContactUs.html">Kontakt oss</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+        <h1>Analyse</h1>
+        <article id="analyse-WAVE">
+            <h2>WAVE</h2>
+            <img src="bilder/wave-summary.png" alt="Bilde som viser resultatene av forsiden fra WAVE før endringer">
+            <p>Den første analysen som ble gjort på Maribee sin nettsted var WAVE analysen av forsiden.</p>
+            <p>Resultatene som er vist på figuren, viser at det kun er en error. 
+                Erroren formidler at det finnes en tom lenke i forsiden.</p> 
+            <p>Dette skyldes href="javascript:void(0)" linken, for å fikse den, ble href="javascript:void(0)" byttet ut med href="#", og aria-label="Hamburgermeny" ble lagt til for å gi objektet et 
+                gjenkjennlig navn, slik at det er en etikket for tilgjengelig navn for objektet.</p>
+            <p>Videre, vises det 4 kontrastfeil, disse skyldes at lenkene til sosiale medier i footeren må ha høyere kontrast.</p>
+            <p>For å fikse dette ble fargen på linkene i footeren endret til hvit, slik at kontrasten øker. Dermed ble det lagt til en hover og underline ble fjernet, slik at knappen ser klikkbar ut.
+                Men siden hoveren ikke vises på mobil, så ble det lagt til en underline når skjermen går over til mobil. Disse endringene ble gjort på tanke på UU.</p>
+            <p>Reultatene viste i tillegg 5 varsler, tre av disse skyldes at bildene på innholdsiden har samme alternativ tekst på alt-attributtet og de to andre skyldes en redundant link.
+                Ny alternativ tekst ble lagt til bildene, den nye alternativ teksten var god og beskrivende, slik at nettsedet blir mer UU-venlig. Ingen endringer ble gjort for å fikse redundant linkene, 
+                grunnet at det var en del av oppgaven at logoen skulle føre til hjemmesiden samt hjem-knappen. Til den grunn ble det tenkt at det er kanskje best å la det være som det er. 
+            </p>
+            <img src="bilder/wave-summary-after.png" alt="Viser analyse resultatene av forsiden etter endringene">
+            <p>Følgende, ble det gjort en analyse av hver innholdsside som nettstedet inneholdt, siden noen feil var gjeldene for både forsiden og innholdssidene, ble det rettet på først.
+                Dette var for eksmpel linkene i footeren som skulle ha høyere kontrast, samt alternativ teksten til bildene.</p>
+        
+            <p>Som vist, dukket disse varslingene opp på UUvsSEO siden, for å fjerne disse ble teksten på kildene gjort litt større ved å bytte fra h4 til h3, samt ble h3 gjort om til h2.
+                Siden disse feilene gjaldt flere innholdsider, ble samme endringer gjort på de i tillegg.  
+            </p>
+            <img src="bilder/too_small_text.png" alt="Viser til varsel om at teksten er for liten">
+            <img src="bilder/skipped-heading-level.png" alt="Viser til varsel om at en heading-nivå har blitt utelatt">
+
+            <p>Det var ikke noe annet som skulle fikses på innholdsiden og det eneste som ikke ble redigert på var redundant linkene.
+                Avsluttende ble alle varslene og feilmeldingene fjernet, slik at nettstedet er mer UU-vennlig. </p>                 
+        </article>
+        <section id="Grid-tabel-3">
+            <div id="Cell-1-a">
+                <h3>Før</h3>
+            </div>
+            <div id="Cell-2-a">
+                <h3>Etter</h3>
+            </div>
+            <div id="Cell-3-a">
+                <h3>Errors</h3>
+            </div>
+            <div id="Cell-4-a">
+                <p> - Tomme Lenker i header, grunnet href="javascript:void(0)" linken.</p>
+            </div>
+            <div id="Cell-5-a">
+                <h3>Alerts</h3>
+            </div>
+            <div id="Cell-6-a">
+                <p> - Utelatt eller hoppet over et headingsnivå</p>
+                <p> - For liten tekst</p>
+                <p> - Lik alternativ tekst på flere bilder</p>
+            </div>
+            <div id="Cell-7-a">
+                <h3>Contrast Errors</h3>
+            </div>
+            <div id="Cell-8-a">
+                <p> - Fire kontrast-errors skyldes sosiale medie lenkene i footeren.</p>
+            </div>
+            <div id="Cell-9-a">
+                <p> - href="javascript:
+                    void(0)", 
+                    ble byttet ut med href="#" og aria-label="Hamburgermeny" ble lagt til for å gi objektet et gjenkjennlig navn.</p>
+            </div>
+            <div id="Cell-10-a">
+                <p> - For å fjerne de to varslene ble teksten på kildene gjort litt større ved å bytte de fra h4 til h3,
+                     samt ble h3 gjort om til h2.</p>
+                <p> - Ny alternativ tekst ble lagt til bildene, 
+                    den nye alternativ teksten var god og beskrivende, slik at nettsedet blir mer UU-venlig.</p>
+            </div>
+            <div id="Cell-11-a">
+                <h3>WAVE</h3>
+            </div>
+            <div id="Cell-12-a">
+                <p> - Fargen på lenkene i footeren ble endret til hvit, slik at kontrasten øker.</p>
+            </div>   
+        </section>
+        <article id="analyse-lighthouse">
+            <h2>Lighthouse</h2>
+            <img src="bilder/Lighthouse-forside-before.png" alt="Figuren viser Lighthouse analyseresultatene av forsiden på desktop">
+            <p> Siden Wave sjekker for det meste UU-venlighet, ble det benyttet Lighthouse for å se over SEO samt andre ting som performance,
+                 accessibility og best practices. Figuren viser resultatene av analysen av forsiden på desktop, generelt såkret nettstedet bra men den såkret lavt på performance.
+                Til den grunn, ble det bestemt det behøves å gå over grunnen til at performance skåret lavt, videre forsøke å øke den ved å rette opp i feil. 
+            </p>
+            <p>Men, først så ble SEO skåren til forsiden vudert:</p>
+            <img src="bilder/Lighthouse-forside-etter-seo-edringer.png" alt="Figuren viser analyseresultatene av forsiden etter endringer for SEO på desktop">
+            <p>På SEO skåret nettsiden sin forside 90, grunnen til dette er at html-sidene mangler en meta description tag.
+                 Følgende ble det lagt til en meta description tag i alle html sidene hvor det beskrives hva html siden inneholder. 
+                 Hver innholdsside har unik innhold, til den grunn varierer content tagen fra html til html side. Etter at disse endringene
+                 ble gjort, skåret alle html-sidene 100 på SEO som vist på figuren til høyre.</p>
+            <p>Det ble observert at hovedgrunnen til at performance skåret lav skyldes for det meste bildene på forsiden, 
+                størrelsen på disse bildene er for stor og de har ikke blitt nedskalert på en fornuftig måte. 
+                Dette fører videre til at siden bruker lengre tid på å laste seg opp nettsedet, og forsinkelser oppstår.</p>
+            <img src="bilder/Lighthouse-forside-etter-performance-endringer.png" alt="Figuren viser analyseresultatene av forsiden etter endringer for performance på desktop">
+            <p>Det som kan gjøre for å løse dette er å nedskalere bildene før de legges inn i Visual Studio Code, 
+                med dette menes det at orginal bildestørrelse skal nedskaleres, slik at når html-siden blir lastet opp,
+                så slipper den å laste opp pixler som er unødvendige. 
+            </p>
+            <p>Som vist til høyre, så ble resultatene mye bedre ettersom disse endringen ble gjort. 
+              innholdsidene skåret like bra etter endringene, videre skal det bli analysert på lik måte, men nå for 
+              mobil og ikke desktop. 
+            </p>
+            <img src="bilder/Lighthouse-forside-mobile-før-endringer.png" alt="Figuren viser analyseresultatene av forsiden før endringer på mobil">
+            <p>Generelt skåret forsiden til nettsiden bra på alt, untatt performance. Performance og SEO, påpekte at linkene i footeren overlapper hverandre.
+                For å fikse dette ble det lagt in maring og padding rundt a-taggene samt ble ikonene gjort om til større i størrelsen. Videre ble det laget en 
+              hover på ikonene slik at man kunne se at de var klikkbare. Teksten ble fjernet slik at det ikke stod facebook også en facebook ikon, men heller bare ikonet.</p>
+            <p>For å øke accessibility måtte kontrasten på meny-baren på mobilversjonen økes, samt krevde lenkene i footeren en beskrivende tekst 
+                om lenken. For å skrive en beskrivende tekst til lenkene i footeren ble aria-label tatt i bruk, det viste seg at det funket bra og skåren gikk opp. 
+                Men, kontrasten på meny-baren måtte også fikses, dette ble enkelt ordenet ved at fargen på a elementene i meny-baren ble endret til svart. slik økte 
+                kontrasten og skåret gikk opp til 100 på accessibility. 
+            </p>
+              <img src="bilder/Lighthouse-forside-etter-endringer-mobil.png" alt="Figuren viser analyseresultatene av forsiden etter endringer på mobil">
+            <p>Etter disse endringene viste det seg at SEO skåret 100, og performance gikk opp til 96 som vist på bilde til høyre. Innholddsidene skåret det samme, men det ble gjort noen få endringer 
+              på kontktsiden får at den skulle skåre like høyt. Det ble lagt til en title for iframe, samt ble kontrasten på en knapp økt, ved å endre fargen på den. 
+            </p>
+            <p>Konkludernede, skåret ikke nettstedet fult på alt på mobil og desktop, men fokuset med lighthouse var å øke SEO. 
+               SEO skåret 100 på alle innholdsidene i nettstedet, noe som betyr at målet med analysen ble nådd. 
+            </p>
+            <button id="share-button-t"><i class="fa-brands fa-twitter"></i> SHARE</button>
+            <button id="share-button-f"><i class="fa-brands fa-facebook"></i> SHARE</button>
+            <button id="share-button-i"><i class="fa-brands fa-instagram"></i> SHARE</button>      
+        </article>
+        <section id="Grid-tabel-4">
+            <div id="Cell-1-l">
+                <h3>Før</h3>
+            </div>
+            <div id="Cell-2-l">
+                <h3>Etter</h3>
+            </div> 
+            <div id="Cell-3-l">
+                <h3>Accessibility</h3>
+            </div>
+            <div id="Cell-4-l">
+                <h3>SEO</h3>
+            </div>
+            <div id="Cell-5-l">
+                <h3>Performance</h3>
+            </div>
+            <div id="Cell-6-l">
+               <p> - Manglet høy kontrast på meny-baren på mobilversjonen</p>
+            </div>
+            <div id="Cell-7-l">
+                <p> - Fargen på a elementene i meny-baren ble endret til svart. 
+                    slik økte kontrasten og skåret gikk opp til 100 på accessibility. </p>
+             </div>
+             <div id="Cell-8-l">
+                <p> - Mangler meta description tag</p>
+                <p> - Mangler en beskrivende tekst til lenkene i footer</p>
+             </div>
+             <div id="Cell-9-l">
+                <p> - Det ble lagt til en meta description tag i alle html sidene hvor det beskrives hva html siden inneholder</p>
+                <p> -  For å skrive en beskrivende tekst til lenkene i footeren ble aria-label tatt i bruk, det viste seg at det funket bra og skåren gikk opp</p>
+             </div>
+             <div id="Cell-10-l">
+                <p> - For stor bildestørrelse/ feil metode brukt for nedskalering</p>
+                <p> - Sosiale medie linkene i footeren overlapper hverandre</p>
+             </div>
+             <div id="Cell-11-l">
+                <p> - Orginal bildestørrelse ble nedskalert, slik at når html-siden blir lastet opp, så slipper den å laste opp pixler som er unødvendige.</p>
+                <p> - For å fikse dette ble det lagt in maring og padding rundt a-taggene samt ble ikonene gjort om til større i størrelsen. 
+                    Videre ble det laget en hover på ikonene slik at man kunne se at de var klikkbare.(SEO)</p>
+             </div>
+             <div id="Cell-12-l">
+                <h3>Lighthouse</h3>
+             </div>
+        </section>
+        <article id="sjekkliste">
+            <h3>Tilgjengelighetserklæring</h3>
+            <a id ="tilgjengelighetserklæring" href="https://itstud.hiof.no/~mareamns/Maribee_WCAG-sjekkliste.pdf"><i class="fa-solid fa-check-to-slot"></i> Klikk her for å se tilgjengelighetserklæring!</a>
+        </article>
+    </main>
+    <footer>
+        <p>Lik & følg oss på våre sosiale medier, for å få med deg det nyeste på MariBee!</p>
+        <a href="https://www.instagram.com/hiofnorge/" aria-label="Høgskolen i Østfold sin instagram bruker"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://nb-no.facebook.com/hiofnorge/" aria-label="Høgskolen i Østfold sin facebook bruker"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/hiofnorge" aria-label="Høgskolen i Østfold sin twitter bruker"><i class="fa-brands fa-twitter"></i></a>
+        <a href="mailto:postmottak@hiof.no" aria-label="Høgskolen i Østfold sin Email"><span class="normal-font"></span><i class="fa-solid fa-envelope"></i></a>
+        <h3>MariBee</h3>
+        <p>MariBee - Copyright 2022</p>
+        <script src="meny.js"></script>
+    </footer>
+    </div>
+</body>
+</html>

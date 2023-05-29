@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="innholdsside med kontaktinformasjon og kontaktskjema">
+   
+    <!--Opengraph meta-->  
+    <meta property="og:titel" content="Kontakt oss">
+    <meta property="og:url" content="https://itstud-hiof.no/~mareamns/deleksamen_2/ContactUs.html">
+    <meta property="og:description" content="Kontaktinformasjon med kontaktskjema">
+    <meta property="og:image" content="bilder/ContactUs.jpg">
+    <!--Twittercards-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kontakt oss"> 
+    <meta name="twitter:description" content="Kontaktinformasjon med kontaktskjema">
+    <meta name="twitter:image" content="bilder/ContactUs.jpg">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ContactUs</title>
+    <link rel = "icon" href ="bilder/globe-solid.svg" type = "image/x-icon">
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <nav>
+                <a href="index.html"><img id="logo" src="bilder/logo.jpg" alt="placeholder bilde for logo"></a>
+                <a href="#" aria-label="Hamburgermeny" id="meny-icon" onclick="hamMenu()"><i class="fa-regular fa-bars"></i></a>
+                <ul id="nav-menu" style="display:block">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="UUvsSEO.html">UU vs SEO</a></li>
+                    <li><a href="CMS.html">CMS</a></li>
+                    <li><a href="Analysis.html">Analyse</a></li>
+                    <li><a href="ContactUs.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="innholdsside-kontaktoss">
+            <section>
+                <h1>Kontakt oss</h1>
+                <img src="bilder/ContactUs.jpg" alt="En jente som skriver på datamaskinen">
+                <!--Bildet er hentet fra: <a href="https://www.vecteezy.com/free-vector/contact-us">Contact Us Vectors by Vecteezy</a>-->
+                <article id="kontakt-info">
+                    <h2>Email <i class="fa-solid fa-envelope"></i> :</h2><a href="mailto:mareamns@hiof.no"><span class="normal-font">mareamns@hiof.no</span></a>
+                    <h2>Tlf <i class="fa-solid fa-phone"></i> :</h2>
+                    <p>69 60 80 00</p>
+                    <h2>Postadresse <i class="fa-solid fa-map-location"></i> :</h2>
+                    <p>Høgskolen i Østfold</p>
+                    <p>Postboks 700</p>
+                    <p>1757 Halden</p>
+                </article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882761207544!2d11.350614615477422!3d59.129250234091444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1669034154713!5m2!1sno!2sno" 
+                 title= "Googlemaps kart" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <article id="kontaktskjema">
+                    <h3>Kontaktskjema</h3>
+                    <label for="name">Navn: </label>
+                    <input type="text" name="name" id="name">
+                    <label for="age">Alder: </label>
+                    <input type="number" name="age" id="age">
+                    <label for="description">Beskrivelse: </label>
+                    <textarea id ="description"></textarea>
+                    <a class="button" href="kontaktskjema.html">Send</a>
+                </article>
+                <article id="kontakt-side-button">
+                    <button id="share-button-t"><i class="fa-brands fa-twitter"></i> SHARE</button>
+                    <button id="share-button-f"><i class="fa-brands fa-facebook"></i> SHARE</button>
+                    <button id="share-button-i"><i class="fa-brands fa-instagram"></i> SHARE</button>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Lik & følg oss på våre sosiale medier, for å få med deg det nyeste på MariBee!</p>
+            <a href="https://www.instagram.com/hiofnorge/" aria-label="Høgskolen i Østfold sin instagram bruker"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://nb-no.facebook.com/hiofnorge/" aria-label="Høgskolen i Østfold sin facebook bruker"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/hiofnorge" aria-label="Høgskolen i Østfold sin twitter bruker"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:postmottak@hiof.no" aria-label="Høgskolen i Østfold sin Email"><span class="normal-font"></span><i class="fa-solid fa-envelope"></i></a>
+            <h3>MariBee</h3>
+            <p>MariBee - Copyright 2022</p>
+            <script src="meny.js"></script>
+        </footer>
+    </div>
+</body>
+</html>

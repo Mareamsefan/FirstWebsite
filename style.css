@@ -1,0 +1,1123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family:'Open Sans', sans-serif;
+    background-color: #fdfdfd;
+    color: rgb(0, 0, 0);
+
+}
+
+#main-container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+                        "header"
+                        "main" 
+                        "footer";
+}
+
+header{ 
+    grid-area: header;
+    background-image: url("bilder/plain-black-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Bildet er hentet fra: https://i.pinimg.com/564x/4e/71/e0/4e71e0d273380a808e14d2a05145892a.jpg */
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+}
+
+li a {
+    display: block;
+    color: rgb(47, 86, 170);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: rgb(47, 86, 170);
+    color: white;
+
+}
+#meny-icon{
+    color:rgb(183, 195, 219);
+    float: right;
+    margin: 0.5rem;
+}
+
+#nav-menu li a:hover{
+    background-color: rgb(47, 86, 170);
+    color: white;
+}
+
+#nav-menu{
+    background-color:rgb(183, 198, 230);
+    top: 100px;
+    padding: 0.5rem;
+    width: 100%;
+    text-align-last: center;
+    text-transform: capitalize;
+    outline: solid;
+}
+#nav-menu a{
+    border: solid;
+    color: #000;
+}
+#nav-menu li{
+    list-style: none;
+    margin: 0.3rem;
+}
+
+#nav-menu ul{
+    float: none;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+
+
+}
+main h1{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+p{
+    font-size: smaller;
+    line-height: 2rem;
+}
+
+.forside-article{ 
+    border: 2px solid black;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    max-width: 300px;
+    width: 100%; 
+}
+.introtext{
+    width: 100%;
+    text-align: center;
+}
+#introtext-art{
+    width: 100%;
+    text-align: center;
+}
+.introtext img{
+    width: 9rem;
+    height: auto;
+}
+
+#innholdsside-article{
+    align-items: center;
+    flex-flow: column;
+
+}
+#innholdsside-article img{
+    width: 13rem;
+    height: auto;
+}
+#innholdsside-CMS-UUvsSEO{
+    display: flex;
+    justify-content: space-around;
+}
+#innholdsside-CMS-UUvsSEO h1{
+    width: max-content;
+    padding: 1rem;
+}
+#innholdsside-kontaktoss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+
+#analyse-WAVE img{
+    height: auto;
+    width: 200px;
+    float: right;
+    margin: 0.5rem;
+}
+
+#innholdsside-kontaktoss img{
+    height: 8rem;   
+}
+#kontakt-info{
+    border: solid black;
+    padding: 0.5rem;
+    max-width: 300px;
+}
+iframe{
+    width: fit-content;
+    padding-bottom:  0.5rem;
+    padding-top:  0.5rem;
+}
+main article img{
+    height: 7rem;
+} 
+#meny-artikkler{
+    grid-area: main;
+    display: flex;
+    flex-flow: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+main section h3{ 
+    flex-basis: 100%; 
+    gap: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+} 
+
+#CMS-article{
+    line-height: 30px;
+    margin: 1rem;
+}
+#kilder{
+    max-width: min-content;
+    font-size: x-small;
+}
+#UU-SEO-article{
+    line-height: 30px;
+    margin: 1rem;
+}
+
+#kontaktskjema{
+   display: flex;
+   flex-direction: column;
+   
+}
+#analyse-WAVE{
+    max-width: 350px;
+   
+}
+#analyse-lighthouse{
+    max-width: 350px;
+    
+}
+
+#analyse-lighthouse img{
+    height: auto;
+    width: 200px;
+    float: right;
+    margin: 0.5rem;
+}
+#analyse p{
+    line-height: 2rem;
+}
+#tilgjengelighetserklæring{
+    background-color:  rgb(83, 62, 220);
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 15px 0px;
+    font-size: large;
+    gap: 1rem;
+}
+#tilgjengelighetserklæring:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border: solid #ffffffb5;
+    gap: 1rem;
+}
+#sjekkliste{
+    text-align: center;
+    gap: 1rem;
+    flex-basis: 100%;
+
+}
+#sjekkliste h3{
+    margin: 1rem;
+}
+/*Styling til tabellene: */
+#Grid-tabel{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(8, 0fr);
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    margin: 0.5rem;
+    font-size: smaller;
+}
+#Grid-tabel div{
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+#Cell-1-C{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: slateblue;
+}
+#Cell-2-C{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: slateblue;
+}
+#Cell-3-C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    background-color: slateblue;
+}
+#Cell-4-C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: slateblue;
+}
+#Cell-7-C{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #d6cfff;
+}
+#Cell-10-C{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #d6cfff;
+}
+#Cell-5-C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: slateblue;
+}
+#Cell-8-C{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #d6cfff;
+}
+#Cell-11-C{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #d6cfff;
+}
+#Cell-6-C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: slateblue;
+}
+#Cell-9-C{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: #d6cfff;
+}
+#Cell-12-C{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: #d6cfff;
+}
+#Cell-15-C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    background-color: #d6cfff;
+}
+#Grid-tabel-2{
+    display: grid;
+    grid-template-columns: repeat(5, 0fr);
+    grid-template-rows: repeat(4, 0fr);
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    margin: 1rem;
+    
+}
+#Grid-tabel-2 div{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+#Cell-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: slateblue;
+}
+
+#Cell-2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: slateblue;
+}
+
+#Cell-4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: slateblue;
+}
+
+#Cell-5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: slateblue;
+}
+
+#Cell-7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #d6cfff;
+
+}
+
+#Cell-8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #d6cfff;
+}
+
+#Cell-10{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #d6cfff;
+}
+#Cell-11{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #d6cfff;
+}
+
+#Grid-tabel-3{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(9, 0fr);
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    margin: 0.5rem;
+    font-size: smaller;
+    max-width: 350px;
+}
+#Grid-tabel-3 div{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+#Cell-11-a{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: slateblue;
+}
+#Cell-1-a{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: slateblue;
+}
+#Cell-2-a{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: slateblue;
+}
+#Cell-3-a{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: slateblue;
+}
+
+#Cell-4-a{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    background-color: #d6cfff;
+}
+
+#Cell-5-a{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: slateblue;
+
+}
+#Cell-6-a{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color:  #d6cfff;
+}
+#Cell-7-a{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: slateblue;
+}
+#Cell-8-a{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: #d6cfff;
+}
+#Cell-9-a{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    background-color: #d6cfff;
+}
+
+#Cell-10-a{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #d6cfff;
+}
+#Cell-12-a{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: #d6cfff;
+}
+#Grid-tabel-4{
+    display: grid;
+    grid-template-columns: repeat( 3, 0.22fr);
+    grid-template-rows: repeat(8, 0fr);
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    margin: 0.5rem;
+    font-size: smaller;
+}
+
+#Grid-tabel-4 div{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+#Cell-12-l{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: slateblue;
+}
+#Cell-1-l{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: slateblue;
+}
+#Cell-2-l{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: slateblue;
+}
+#Cell-3-l{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: slateblue;
+}
+#Cell-4-l{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: slateblue;
+}
+#Cell-5-l{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: slateblue;
+}
+#Cell-6-l{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #d6cfff;
+}
+#Cell-7-l{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #d6cfff;
+}
+#Cell-8-l{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #d6cfff;
+}
+#Cell-9-l{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #d6cfff;
+}
+#Cell-10-l{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #d6cfff;
+}
+#Cell-11-l{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #d6cfff;
+}
+/*Inspirasjon fra forelesnings css, buttons for linkene i artikkelkortene i main og aside: */
+.article-button {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color:  rgb(183, 195, 219);
+    text-decoration: none;
+    color: #000;
+}
+
+.article-button:hover {
+    background-color: rgb(47, 86, 170);
+    color: #fff;
+}
+
+.article-button:active {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+} 
+/*Inspirasjon fra: https://www.w3schools.com/howto/howto_css_round_buttons.asp for å lage knappene nedenfor*/
+#share-button-t{
+    background-color: #0462aa;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+#share-button-t:hover{
+    background-color: white;
+    color: #0462aa;
+    border: solid blue;
+}
+#share-button-f{
+    background-color: #052e4d;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+#share-button-f:hover{
+    background-color: white;
+    color:  #052e4d;
+    border: solid  #052e4d;
+}
+#share-button-i{
+    background-color: #bc1ca6;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+#share-button-i:hover{
+    background-color: white;
+    color:  #bc1ca6;
+    border: solid #bc1ca6;
+}
+#kontakt-side-button{
+    padding: 1rem;
+}
+.button{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 15px 0px;
+    max-width: 5rem;  
+}
+.button:hover{
+    background-color: #2d3085;
+    color: #ffffffb5;
+    border: solid #ffffffb5;
+}
+footer{
+    grid-area: footer;
+    background-color:rgb(47, 86, 170);
+    color:white;
+    padding: 3rem 2rem; 
+    flex-direction: column;
+    text-align: center;
+
+} 
+
+footer a {
+    color: #fff;
+    font-size: x-large;
+    margin-right: 0.5rem;
+    
+}
+footer a:hover{
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem;
+}
+
+/*Lagde starten på media only screen bare for desktop-versjon sånn at jeg har noe å bygge på,
+til kommende del-eksamner*/
+@media only screen and (min-width: 600px){
+    #main-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:"header header header" 
+                            "main main main"
+                            "footer footer footer";
+        grid-gap: 1rem;
+        grid-row-gap: 1rem;
+    
+    }
+    #meny-icon{
+        display: none;
+    }
+    #nav-menu{
+        display: block !important;
+        position: static;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+        
+    }
+    #nav-menu a{
+        border: none;
+        color: rgb(47, 86, 170);
+    }
+  
+    li{
+        float: left;
+    }
+    
+    #logo{
+        width: 110px;
+        height: auto;
+    }
+    #meny-artikkler{
+        grid-area: main;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+    #share-button-t{
+        font-size: 15px;
+    }
+    #share-button-f{
+        font-size: 15px;
+    }
+    #share-button-i{
+        font-size: 15px;
+    }
+
+    /*Tatt inpirasjon fra : https://www.w3schools.com/Css/tryit.asp?filename=trycss_navbar_vertical_gray 
+    for å lage hoveren på navbaren*/
+
+    #Grid-tabel{
+        display: grid;
+        grid-template-columns: repeat(4, 0fr);
+        grid-template-rows: repeat(4, 0fr);
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+
+    }
+    #Grid-tabel-2{
+        display: grid;
+        grid-template-columns: repeat(4, 0fr);
+        grid-template-rows: repeat(4, 0fr);
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+
+    }
+
+    #Cell-1{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: slateblue;
+    }
+    #Cell-2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: slateblue;
+    }
+    #Cell-3{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: slateblue;
+    }
+    #Cell-4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: slateblue;
+    }
+    #Cell-5{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: slateblue;
+    }
+    #Cell-6{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: slateblue;
+    }
+    #Cell-7{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #d6cfff;
+    
+    }
+    #Cell-8{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #d6cfff;
+    }
+    #Cell-9{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: #d6cfff;
+    }
+    #Cell-10{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #d6cfff;
+    }
+    #Cell-11{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #d6cfff;
+    }
+    #Cell-12{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: #d6cfff;
+    }
+    
+    #Cell-15{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: #d6cfff;
+    }
+    #Cell-1-C{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: slateblue;
+    }
+    #Cell-2-C{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: slateblue;
+    }
+    #Cell-3-C{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: slateblue;
+    }
+    #Cell-4-C{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: slateblue;
+    }
+    #Cell-5-C{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: slateblue;
+    }
+    #Cell-6-C{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: slateblue;
+    }
+    #Cell-7-C{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #d6cfff;
+    
+    }
+    #Cell-8-C{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #d6cfff;
+    }
+    #Cell-9-C{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: #d6cfff;
+    }
+    #Cell-10-C{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #d6cfff;
+    }
+    #Cell-11-C{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #d6cfff;
+    }
+    #Cell-12-C{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: #d6cfff;
+    }
+    
+    #Cell-15-C{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: #d6cfff;
+    }
+
+    #Grid-tabel-4{
+        margin-left: auto;
+    }
+    #Grid-tabel-4 p{
+        font-size: medium;
+    }
+    #Grid-tabel-3 p{
+        font-size: medium;
+    }
+    #Cell-11-a{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: slateblue;
+    }
+    #Cell-1-a{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: slateblue;
+    }
+    #Cell-2-a{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: slateblue;
+    }
+    #Cell-3-a{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color:  slateblue;
+    }
+    #Cell-4-a{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color:  #d6cfff;
+    }
+    #Cell-5-a{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: slateblue;
+    }
+    #Cell-6-a{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color:  #d6cfff;
+    }
+    #Cell-7-a{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        background-color:  slateblue;
+    }
+    #Cell-8-a{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        background-color:  #d6cfff;
+    }
+    #Cell-9-a{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #d6cfff;
+    }
+    
+    #Cell-10-a{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: #d6cfff;
+    }
+    #Cell-12-a{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        background-color: #d6cfff;
+    }
+    p{
+        font-size: medium;
+        line-height: 2rem;
+    }
+    #CMS-article{
+        max-width: 600px;
+    }
+    #UU-SEO-article{
+        max-width: 700px;
+    }
+    #Grid-tabel-2 div{
+        width: 16rem;
+    }
+    
+    footer a{
+        text-decoration: none;
+    }
+    #analyse-WAVE{
+        max-width: 800px;
+        margin-left: 1rem;
+    }
+    #analyse-lighthouse{
+        max-width: 800px;
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="innholdsside med informasjon om CMS">
+
+    <!--Opengraph meta-->  
+    <meta property="og:title" content="CMS - Content Mangement System">
+    <meta property="og:url" content="https://itstud-hiof.no/~mareamns/deleksamen_2/CMS.html">
+    <meta property="og:description" content="Informasjon om CMS, Content Mangement System">
+    <meta property="og:image" content="bilder/CMS.jpg">
+    <!--Twittercards-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CMS - Content Mangement System"> 
+    <meta name="twitter:description" content="Informasjon om CMS, Content Mangement System">
+    <meta name="twitter:image" content="bilder/CMS.jpg">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CMS</title>
+    <link rel = "icon" href ="bilder/globe-solid.svg" type = "image/x-icon">
+</head>
+<body>
+    <div id="main-container">
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo" src="bilder/logo.jpg" alt="placeholder bilde for logo"></a>
+            <a href="#" aria-label="Hamburgermeny" id="meny-icon" onclick="hamMenu()"><i class="fa-regular fa-bars"></i></a>
+            <ul id="nav-menu" style="display:block">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="UUvsSEO.html">UU vs SEO</a></li>
+                <li><a href="CMS.html">CMS</a></li>
+                <li><a href="Analysis.html">Analyse</a></li>
+                <li><a href="ContactUs.html">Kontakt oss</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="innholdsside-CMS-UUvsSEO">
+        <article id="CMS-article">
+            <h1>Headless CMS vs Seamless CMS</h1>
+            <img src="bilder/CMS.jpg" alt="En jente som redigerer og utvikler en nettside på en datamaskin">
+            <!--Bildet er hentet fra: <a href="https://www.vecteezy.com/free-vector/publish">Publish Vectors by Vecteezy</a>-->
+            <p>Begrepet CMS står for Content Mangement System, og er et innholdsstyringssystem som
+                 gjør det mulig å administrere en applikasjon eller gruppe
+                 av applikasjoners digitale innhold uten å kode eller utvikle nye sider. 
+                 Alt fra det skriftlige innholdet til designen administreres gjennom dette systemet, 
+                 følgende tilbyr den enkel administrasjon av nettsider. Det skilles mellom to ulike hovedtyper CMS, 
+                 seamless(tradisjonell) CMS og headless CMS.
+                 Denne artikkelen vil enkelt formulere hva som skiller seamless CMS fra headless CMS.</p> <br>
+
+            <p>Seamless CMS, altså kalt for tradisjonelt CMS forbinder front-end og back-end på nettsted i en fin,
+                 samt enkel applikasjonskodebase. Følgende, tar den for seg alt fra databasen for innhold til designet og layouten på nettsiden.
+                Wordpress eller Drupal, er eksempler på slike applikasjoner. Headless CMS skiller seg fra tradisjonelt CMS, ettersom den ikke er direkte tilknyttet til et front-end. I motsetning til et tradisjonelt CMS som forsøker å tilknytte front-end og innholdet,
+                så arbeider headless CMS i hovedgrunn på innholdet i en nettside. Når innholdet er opprettet og redigert, så publiseres det bare via (API) som står for applikasjonsprogrammeringsgrensesnitt. Dette betyr at et headless CMS har ingen innvirkning eller inngang på front-end.
+                Avsluttende er tradisjonelt CMS enklere dersom man ønsker å ha alt på et sted, 
+                følgende et headless CMS er bedre grunnet at det gir utviklere friheten til å velge prefererende verktøy for front-end.</p>
+                <button id="share-button-t"><i class="fa-brands fa-twitter"></i> SHARE</button>
+                <button id="share-button-f"><i class="fa-brands fa-facebook"></i> SHARE</button>
+                <button id="share-button-i"><i class="fa-brands fa-instagram"></i> SHARE</button>
+        </article>
+        <section id="Grid-tabel">
+            <div id="Cell-1-C">
+                <h2>Fordeler</h2>
+            </div>
+            <div id="Cell-2-C">
+                <h2>Ulemper</h2>
+            </div>
+            <div id="Cell-3-C">
+                <h2>Likheter/<br>ulikheter</h2>
+            </div>
+            <div id="Cell-4-C">
+                <h2>WCMS</h2>
+            </div>
+            <div id="Cell-5-C">
+                <h2>DMS</h2>
+            </div>
+            <div id="Cell-6-C">
+                <h2>CCMS</h2>
+            </div>
+            <div id="Cell-7-C">
+                <ul>
+                    <li>Kostnadseffektivtet - enten gratis eller lave priser</li>
+                    <li>Enkel å bruke - De fleste WCMS-verktøyene er svært brukervennlige, trenger ikke koderfaring</li>
+                    <li>Redigeringsmuligheter - Verktøyet tilbyr enkle redigeringsmuligheter for front-ends</li>
+                    <li>Arbeidsflyt - administratorbrukere kan enkelt adminstrere arbeidsflyter i CMS</li>
+                    <li>Mange av WCMS - verktøyene er SEO-vennlige)</li> 
+                </ul>     
+                <!--Informasjonen er hentet den 24.10.22 fra: https://www.techtarget.com/searchcontentmanagement/definition/web-content-management-WCM -->      
+            </div>
+            <div id="Cell-8-C">
+                <ul>
+                    <li>Oppretter en kilde for alt - Alt digitalisert informasjon lagres i et enkelt oppbevaringssted</li>
+                    <li>God sikkerhet - Hovedgrunnene til at organisasjoner foretrekker å ha en DMS er grunnet sikkerhet</li>
+                    <li>Kostnadseffektiv løsning - frigjør mer kontorplass samt spare kostander på eiendomsleie.</li> 
+                    <li>Seamless fildeling - Gjenfinning blir en enkel prosess ettersom løsningen gir direkte resultater i løpet av noen få sekunder. </li>
+                </ul>
+                <!--Informasjonen er hentet den 24.10.22 fra: https://www.mhcautomation.com/blog/11-benefits-and-advantages-of-document-management-systems/ -->
+            </div>
+            <div id="Cell-9-C">
+                <ul>
+                    <li>Nøyaktighet og Konsistens - Med CCMS, kan et team enkelt bygge et datarikt innholdsrepositorium hvor det administrers innhold på tvers av enheter</li>
+                    <li>Kostnadseffektivitet - Reduserer vedlikeholdskostnadene</li>
+                    <li>Sporbarhet - CCMS gjør det enklere å vite hvor innholdet kommer fra samt hva som må gjøres for å oppdatere innhold</li>
+                </ul>
+                <!--Informasjonen er hentet den 24.10.22 fra: https://heretto.com/what-is-a-component-content-management-system/-->
+            </div>
+            <div id="Cell-10-C">
+                <ul>
+                    <li>Når det kommer til store implementeringer kan kostnadene bli litt høye.</li> 
+                    <li>Det oppstår ofte forsinkelser grunnet, ventetidspriblemer på store systemer.</li> 
+                    <li>Mangel av regelmessige oppdateringer, kan føre til at systemet blir i sørre grad mer sårbar for nettangrep.</li>
+                    <!--Informasjonen er hentet den 24.10.22 fra: https://www.techtarget.com/searchcontentmanagement/definition/web-content-management-WCM -->
+                </ul>
+            </div>
+            <div id="Cell-11-C">
+                <ul>
+                    <li>Sikkerhet - Med informasjonsdeling som en av funksjonene, er det alltid en mulighet for at informasjonen som overleveres kan ende opp i feil hender</li>
+                    <li>Utstyrskosnader - Når en organisasjon bestemmer seg for å bli papirløs og gå over til digitale løsninger, må en enorm mengde data skannes. Denne maskinvaren som brukes for denne typen skannetjenste, krever en betydelig sum penger.</li>
+                    <li>Avhengighet av teknologi: Organisasjoner må ikke være for avhengige av teknologi, i tilfelle det blir et problem i fremtiden.</li>
+                </ul>
+                 <!--Informasjonen er hentet den 24.10.22 fra: https://www.mhcautomation.com/blog/11-benefits-and-advantages-of-document-management-systems/ -->
+            </div>
+            <div id="Cell-12-C">
+                <ul>
+                    <li>Reduserer implementeringstidslinjer - krever større tidsinvestering i begynnelsen av prosjektet, grunnet at det må sikkres at elementene er godt organsiert.</li>
+                    <li>Investering - Siden det kan være tidskrevende å komme i gang med projektet sitt, er det en stor mulighet for at et team velger å investere i andre teknologiske løsninger.</li>
+                    <li>Sikkerhet - Siden data ofte overføres til og fra skyen, er det mer sårbart for kompromisserm, dette fører til at kostanadene for å vedlikeholde sikkerhet øker.</li>
+                </ul>
+                <!--Informasjonen er hentet den 24.10.22 fra: https://heretto.com/what-is-a-component-content-management-system/-->
+            </div>
+            <div id="Cell-15-C">
+                <p>Likheter:</p>
+                <ul>
+                    <li>Alle CMS-løsninger har sårbar sikkerhet, og er utsatt for nettangrep</li>
+                    <li>Gjør det enklere å adminstere innhold, om det gjelder henting eller oppdatering</li>
+                    <li>Gir gode redigeringsmuligheter</li>
+                    <li>Sparer tid og penger</li>
+                    <li>Gir bedre arbeidsflyt</li>
+                </ul>
+                <p>Ulikheter:</p>
+                <ul>
+                    <li>Ikke alle går både på front-end og backend</li>
+                    <li>Noen har mindre regelmessige oppdateringer enn andre</li>
+                    <li>Kostnadene/Utstyrkostandene varierer</li>
+                </ul>
+            </div>
+        </section>
+            <article id="kilder">
+                <h3>KILDER:</h3>
+                <ul>
+                    <li><a href="https://heretto.com/what-is-a-component-content-management-system">https://heretto.com/what-is-a-component-content-management-system</a></li>
+                    <li><a href="https://www.techtarget.com/searchcontentmanagement/definition/web-content-management-WCM">https://www.techtarget.com/searchcontentmanagement/definition/web-content-management-WCM</a></li>
+                    <li><a href="https://www.mhcautomation.com/blog/11-benefits-and-advantages-of-document-management-systems/">https://www.mhcautomation.com/blog/11-benefits-and-advantages-of-document-management-systems/</a></li>
+                    <li><a href="https://guilty.no/blogg/hva-er-cms%22%3Ehttps://guilty.no/blogg/hva-er-cms">https://guilty.no/blogg/hva-er-cms%22%3Ehttps://guilty.no/blogg/hva-er-cms</a></li>            
+                </ul>
+            </article>
+    </main>
+    <footer>
+        <p>Lik & følg oss på våre sosiale medier, for å få med deg det nyeste på MariBee!</p>
+        <a href="https://www.instagram.com/hiofnorge/" aria-label="Høgskolen i Østfold sin instagram bruker"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://nb-no.facebook.com/hiofnorge/" aria-label="Høgskolen i Østfold sin facebook bruker"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/hiofnorge" aria-label="Høgskolen i Østfold sin twitter bruker"><i class="fa-brands fa-twitter"></i></a>
+        <a href="mailto:postmottak@hiof.no" aria-label="Høgskolen i Østfold sin Email"><span class="normal-font"></span><i class="fa-solid fa-envelope"></i></a>
+        <h4>MariBee</h4>
+        <p>MariBee - Copyright 2022</p>
+        <script src="meny.js"></script>
+    </footer>
+    </div>
+</body>
+</html>
